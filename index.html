@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Blogr landing page</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <!-- Desktop nav -->
+        <section class="nav-desktop">
+          <img class="logo" src="images/logo.svg" alt="" />
+          <nav class="nav-desktop-menu__container">
+            <ul class="desktop-menu">
+              <li class="desktop-menu__element">
+                <span class="desktop-product__item">
+                  Product
+                  <img
+                    class="desktop-product__image"
+                    src="images/icon-arrow-light.svg"
+                    alt=""
+                  />
+                </span>
+                <ul class="desktop-product__submenu">
+                  <li class="submenu__item">Overview</li>
+                  <li class="submenu__item">Pricing</li>
+                  <li class="submenu__item">Marketplace</li>
+                  <li class="submenu__item">Features</li>
+                  <li class="submenu__item">Integrations</li>
+                </ul>
+              </li>
+              <li class="desktop-menu__element">
+                <span class="desktop-company__item">
+                  Company
+                  <img
+                    class="desktop-company__image"
+                    src="images/icon-arrow-light.svg"
+                    alt=""
+                  />
+                </span>
+                <ul class="desktop-company__submenu">
+                  <li class="submenu__item">About</li>
+                  <li class="submenu__item">Team</li>
+                  <li class="submenu__item">Blog</li>
+                  <li class="submenu__item">Careers</li>
+                </ul>
+              </li>
+              <li class="desktop-menu__element">
+                <span class="desktop-connect__item">
+                  Connect
+                  <img
+                    class="desktop-connect__image"
+                    src="images/icon-arrow-light.svg"
+                    alt=""
+                  />
+                </span>
+                <ul class="desktop-connect__submenu">
+                  <li class="submenu__item">Contact</li>
+                  <li class="submenu__item">Newsletter</li>
+                  <li class="submenu__item">LinkedIn</li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <ul class="desktop-account-access">
+            <li class="desktop-login">Login</li>
+            <li class="desktop-sing-up">Sign Up</li>
+          </ul>
+        </section>
+        <!-- Mobile nav -->
+        <section class="nav-mobile">
+          <div class="nav-mobile__header">
+            <img class="logo__mobile" src="images/logo.svg" alt="" />
+            <img
+              class="menu hamburger"
+              src="images/icon-hamburger.svg"
+              alt=""
+            />
+          </div>
+          <nav class="nav-mobile__menu">
+            <ul class="nav-mobile__menu__list">
+              <li class="product__container product__item">
+                <span class="product__element">
+                  Product
+                  <img class="arrow" src="images/icon-arrow-dark.svg" alt="" />
+                </span>
+                <ul class="mobile-product__submenu">
+                  <li class="submenu__item">Overview</li>
+                  <li class="submenu__item">Pricing</li>
+                  <li class="submenu__item">Marketplace</li>
+                  <li class="submenu__item">Features</li>
+                  <li class="submenu__item">Integrations</li>
+                </ul>
+              </li>
+              <li class="company__container company__item">
+                <span class="company__element">
+                  Company
+                  <img class="arrow" src="images/icon-arrow-dark.svg" alt="" />
+                </span>
+                <ul class="mobile-company__submenu">
+                  <li class="submenu__item">About</li>
+                  <li class="submenu__item">Team</li>
+                  <li class="submenu__item">Blog</li>
+                  <li class="submenu__item">Careers</li>
+                </ul>
+              </li>
+              <li class="connect__container connect__item">
+                <span class="connect__element">
+                  Connect
+                  <img class="arrow" src="images/icon-arrow-dark.svg" alt="" />
+                </span>
+                <ul class="mobile-connect__submenu">
+                  <li class="submenu__item">Contact</li>
+                  <li class="submenu__item">Newsletter</li>
+                  <li class="submenu__item">LinkedIn</li>
+                </ul>
+              </li>
+            </ul>
+            <hr class="separation" />
+            <ul class="mobile-account-access">
+              <li class="account-access__login">Login</li>
+              <li class="account-access__sign-up">Sign Up</li>
+            </ul>
+          </nav>
+        </section>
+        <section class="header__text">
+          <h1 class="header__title">A modern publishing platform</h1>
+          <p class="header__description">
+            Grow your audience and build your online brand
+          </p>
+          <button></button>
+        </section>
+        <section class="header__btn__container">
+          <button class="btn__start-free">Start for Free</button>
+          <button class="btn__learn-more">Learn More</button>
+        </section>
+      </header>
+      <h2 class="core-features-title">Designed for the future</h2>
+      <article class="core-features__container">
+        <section class="core-features__image">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="images/illustration-editor-desktop.svg"
+            />
+            <img
+              src="images/illustration-editor-mobile.svg"
+              alt="Editor Illustration"
+            />
+          </picture>
+        </section>
+        <article class="core-features__text">
+          <div>
+            <h3 class="core-features__text-title">
+              Introducing an extensible editor
+            </h3>
+            <p class="core-features__text-description">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div>
+            <h3 class="core-features__text-title">Robust content management</h3>
+            <p class="core-features__text-description">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+        </article>
+      </article>
+      <article class="infrastructure-overview">
+        <img
+          class="infrastructure-overview__illustration"
+          src="images/illustration-phones.svg"
+          alt=""
+        />
+        <div class="infrastructure-overview__text">
+          <h3 class="infrastructure-overview__title">
+            State of the Art Infrastructure
+          </h3>
+          <p class="infrastructure-overview__description">
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </article>
+      <article class="tooling-features">
+        <section class="tooling-features__image">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="images/illustration-laptop-desktop.svg"
+            />
+            <img
+              src="images/illustration-laptop-mobile.svg"
+              alt="Laptop Illustration"
+            />
+          </picture>
+        </section>
+        <div class="tooling-features__text">
+          <h3 class="tooling-features__title">Free, open, simple</h3>
+          <p class="tooling-features__description">
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+          <h3 class="tooling-features__title">Powerful tooling</h3>
+          <p class="tooling-features__description">
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </article>
+      <footer class="footer">
+        <img class="footer__logo" src="images/logo.svg" alt="" />
+        <div class="footer__section">
+          <h4 class="footer__title">Product</h4>
+          <ul>
+            <li class="footer__subtitle">Overview</li>
+            <li class="footer__subtitle">Pricing</li>
+            <li class="footer__subtitle">Marketplace</li>
+            <li class="footer__subtitle">Features</li>
+            <li class="footer__subtitle">Integrations</li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Company</h4>
+          <ul>
+            <li class="footer__subtitle">About</li>
+            <li class="footer__subtitle">Team</li>
+            <li class="footer__subtitle">Blog</li>
+            <li class="footer__subtitle">Careers</li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Connect</h4>
+          <ul>
+            <li class="footer__subtitle">Contact</li>
+            <li class="footer__subtitle">Newsletter</li>
+            <li class="footer__subtitle">LinkedIn</li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
